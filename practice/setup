@@ -1,10 +1,10 @@
 #!/bin/bash
 mkdir $1
-cp sample.java $1/$1.java
+cp sample.cpp $1/$1.cpp
 cp compiler $1
 cd $1
-touch $1.java
-subl $1.java
-sed -i -e s/barn1/$1/g $1.java
+touch $1.cpp
+subl $1.cpp
+sed -i -e s/barn1/$1/g $1.cpp
 touch $1.in
 echo "Finished!"
